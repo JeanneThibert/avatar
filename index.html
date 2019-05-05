@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Avatar avec formulaire de contact</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">The Villa Of Eden</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Présentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://thevillaofeden.e-monsite.com" target="_blank">Site internet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://thevillaofeden.e-monsite.com/album-photos/" target="_blank">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Jeanne T.</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">Dirigeante de l'hôtel The Villa Of Eden Siem Reap | Cambodge</h2>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">Accès Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4">Présentation</h2>
+            <p class="text-white-50">L'histoire de l'hôtel à commencer par un départ en vacance au Cambodge , la découverte
+              d'un pays , d'une culture , j'en suis devenu folle amoureuse . J'ai donc décidé de
+              quitter la France afin de devenir chef d'entreprise d 'un hôtel de cinq chambres dans
+              un style typiquement Khmer , avec également un très grand jardin ainsi que d'une
+              piscine avec une cascade et d'un restaurant proposant de la cuisine Khmer du Lundi au
+              Samedi et de la cuisine Française le Dimanche sur réservation uniquement .
+              Nous sommes pour le maintien d'une planète saine , c'est pour cela que nous utilisons
+              uniquement des produits de qualité ainsi que des repas fais maison avec les produits du
+              marché de Sambas</p>
+          </div>
+        </div>
+        <img src="img/ipad.png" class="img-fluid" alt="">
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+      <div class="container">
+
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/profil.jpg" width="454px" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Renseignements personnelles</h4>
+              <ul>
+              <li><p class="text-black-50 mb-0">Jeanne Thibert </p></li>
+              <li><p class="text-black-50 mb-0">23 Novembre 1995 </p></li>
+              <li><p class="text-black-50 mb-0">Développeuse web , directrice de la communication et cuisinière à plein temps à The
+                Villa Of Eden </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+      <div class="contact">  
+        <form id="contact" action="donnee.php" method="post">
+          <h3>Contact</h3>
+          <h4>Pour plus de renseignements</h4>
+          <fieldset>
+          <select class="form-control"  name="sexe"  id="exampleFormControlSelect1">
+              <option selected >Sexe</option>
+              <option>Homme</option>
+              <option>Femme</option>
+          </select>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Nom" name="nom" type="text" tabindex="1" id="verifNom" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Prénom" name="prenom" type="text" tabindex="1" id="verifPrenom" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Adresse Email" name="email" type="email" tabindex="2" id="verifEmail"required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Numéro de téléphone" name="telephone" type="tel" id="verifTel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+              <textarea placeholder="Sujet " name="sujet" tabindex="5" id="verifSujet" required></textarea>
+            </fieldset>
+          <fieldset>
+            <textarea placeholder="Votre message " name="message" tabindex="5" id="verifMessage" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
+          </fieldset>
+         
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section bg-black">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Adresse</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">Thmey Phum , Sangkat Svay Dangkum | Siem Reap </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Email</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="#">thevillaofeden@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Téléphone</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">095 991 560 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Copyright &copy; The Villa Of Eden
+      </div>
+    </footer>
+
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="app.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+
+</html>
